@@ -1,0 +1,51 @@
+<Html>
+	<Head>
+		<Title>Load Exam Info</Title>
+		<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="style.css"/>
+	</Head>
+	<Body>
+		<div id="divMain" class="main-div">
+		<h3>LOGIN</h3>
+		<input type="email" placeholder="Email" id="edtEmail"/>
+		<input type="password" placeholder="Password" id="edtPassword"/>
+		
+		<Button id="btnLogin" onclick="login()">LOGIN</Button>
+		
+		
+		</div>
+		
+		<div id="divLoggedIn" class ="logged-in">
+		<h3>Welcome User. <h3>
+		<p>You are currently logged in.</p>
+		
+		<Button id="btnLogout">Log Out</Button>
+		</div>
+		
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+		<script  src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			 https://firebase.google.com/docs/web/setup#available-libraries -->
+
+		<script>
+		  // Your web app's Firebase configuration
+		  var firebaseConfig = {
+			apiKey: "AIzaSyAjXGV6184CpbY0dqj3dRSpL0Gma9j9kjQ",
+			authDomain: "theschool-eb412.firebaseapp.com",
+			databaseURL: "https://theschool-eb412.firebaseio.com",
+			projectId: "theschool-eb412",
+			storageBucket: "theschool-eb412.appspot.com",
+			messagingSenderId: "905276110916",
+			appId: "1:905276110916:web:1184b75c69670a3420a411"
+		  };
+		  // Initialize Firebase
+		  firebase.initializeApp(firebaseConfig);
+		</script>
+		
+		<script src="index.js"></script>
+	</Body>
+
+</Html>
